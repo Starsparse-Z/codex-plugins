@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reuse Before Build"
+  short_description: "Search GitHub before starting substantial projects"
+  default_prompt: "Use $reuse-before-build to research existing GitHub projects before implementation."

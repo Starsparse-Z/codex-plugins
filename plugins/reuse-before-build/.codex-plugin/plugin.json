@@ -1,0 +1,26 @@
+{
+  "name": "reuse-before-build",
+  "version": "0.1.0",
+  "description": "GitHub-first reuse review before substantial development.",
+  "author": {
+    "name": "Starsparse-Z",
+    "url": "https://github.com/Starsparse-Z"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Reuse Before Build",
+    "shortDescription": "Search GitHub before building something new.",
+    "longDescription": "Research existing GitHub projects before substantial development, then choose Use Directly, Fork / Compose, Borrow Patterns, or Build Fresh.",
+    "developerName": "Starsparse-Z",
+    "category": "DeveloperTools",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Find reusable GitHub projects before implementation.",
+      "Compare these candidates and recommend a reuse strategy.",
+      "Decide whether we should adopt, fork, borrow, or build fresh."
+    ]
+  }
+}
