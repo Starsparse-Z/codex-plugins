@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "rootId": "empire",
+  "nodes": {
+    "empire": {
+      "id": "empire",
+      "title": "Build a durable large-scale business",
+      "kind": "goal",
+      "status": "active",
+      "join": "all",
+      "parents": [],
+      "children": ["marketing", "technology"],
+      "artifacts": [],
+      "runtime": {
+        "threadId": null,
+        "activeTurnId": null
+      }
+    },
+    "marketing": {
+      "id": "marketing",
+      "title": "Validate markets, channels, pricing, and demand",
+      "kind": "workstream",
+      "status": "pending",
+      "join": "all",
+      "parents": ["empire"],
+      "children": ["first-validation"],
+      "artifacts": [],
+      "runtime": {
+        "threadId": null,
+        "activeTurnId": null
+      }
+    },
+    "technology": {
+      "id": "technology",
+      "title": "Build the technical platform and product capability",
+      "kind": "workstream",
+      "status": "pending",
+      "join": "all",
+      "parents": ["empire"],
+      "children": ["first-validation"],
+      "artifacts": [],
+      "runtime": {
+        "threadId": null,
+        "activeTurnId": null
+      }
+    },
+    "first-validation": {
+      "id": "first-validation",
+      "title": "Merge marketing and technology into a measurable validation gate",
+      "kind": "merge_gate",
+      "status": "pending",
+      "join": "all",
+      "parents": ["marketing", "technology"],
+      "children": ["company-a", "company-b"],
+      "artifacts": [],
+      "runtime": {
+        "threadId": null,
+        "activeTurnId": null
+      }
+    },
+    "company-a": {
+      "id": "company-a",
+      "title": "Build company A",
+      "kind": "company",
+      "status": "pending",
+      "join": "all",
+      "parents": ["first-validation"],
+      "children": ["shared-platform"],
+      "artifacts": [],
+      "runtime": {
+        "threadId": null,
+        "activeTurnId": null
+      }
+    },
+    "company-b": {
+      "id": "company-b",
+      "title": "Build company B",
+      "kind": "company",
+      "status": "pending",
+      "join": "all",
+      "parents": ["first-validation"],
+      "children": ["shared-platform"],
+      "artifacts": [],
+      "runtime": {
+        "threadId": null,
+        "activeTurnId": null
+      }
+    },
+    "shared-platform": {
+      "id": "shared-platform",
+      "title": "Merge company A and B into shared technology, capital, and governance",
+      "kind": "merge_gate",
+      "status": "pending",
+      "join": "all",
+      "parents": ["company-a", "company-b"],
+      "children": [],
+      "artifacts": [],
+      "runtime": {
+        "threadId": null,
+        "activeTurnId": null
+      }
+    }
+  },
+  "edges": [
+    {
+      "id": "empire->marketing",
+      "from": "empire",
+      "to": "marketing",
+      "type": "decompose",
+      "required": true
+    },
+    {
+      "id": "empire->technology",
+      "from": "empire",
+      "to": "technology",
+      "type": "decompose",
+      "required": true
+    },
+    {
+      "id": "marketing->first-validation",
+      "from": "marketing",
+      "to": "first-validation",
+      "type": "contributes_to",
+      "required": true
+    },
+    {
+      "id": "technology->first-validation",
+      "from": "technology",
+      "to": "first-validation",
+      "type": "contributes_to",
+      "required": true
+    },
+    {
+      "id": "first-validation->company-a",
+      "from": "first-validation",
+      "to": "company-a",
+      "type": "depends_on",
+      "required": true
+    },
+    {
+      "id": "first-validation->company-b",
+      "from": "first-validation",
+      "to": "company-b",
+      "type": "depends_on",
+      "required": true
+    },
+    {
+      "id": "company-a->shared-platform",
+      "from": "company-a",
+      "to": "shared-platform",
+      "type": "merge_into",
+      "required": true
+    },
+    {
+      "id": "company-b->shared-platform",
+      "from": "company-b",
+      "to": "shared-platform",
+      "type": "merge_into",
+      "required": true
+    }
+  ],
+  "updatedAt": "2026-09-16T00:00:00.000Z"
+}
