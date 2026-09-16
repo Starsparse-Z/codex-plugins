@@ -1,0 +1,32 @@
+{
+  "name": "starsparse-codex",
+  "interface": {
+    "displayName": "Starsparse Codex"
+  },
+  "plugins": [
+    {
+      "name": "goal-dag",
+      "source": {
+        "source": "local",
+        "path": "./plugins/goal-dag"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "DeveloperTools"
+    },
+    {
+      "name": "reuse-before-build",
+      "source": {
+        "source": "local",
+        "path": "./plugins/reuse-before-build"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "DeveloperTools"
+    }
+  ]
+}
