@@ -32,7 +32,7 @@ This is engineering guidance, not legal advice.
 ## Maintenance Red Flags
 
 - archived repository;
-- no release or substantive commit for a long time;
+- no release or substantive commit for a long period;
 - only one maintainer and no successor plan;
 - thousands of open issues with no triage;
 - README claims unsupported by code, tests, or releases;
@@ -48,7 +48,7 @@ Prefer, in order:
 1. direct dependency or hosted service;
 2. fork/compose with a narrow adapter;
 3. pattern borrowing with independent implementation;
-4. fully custom build.
+4. build fresh.
 
 Move to a heavier option only when the lighter option fails fit, maintenance, license, security, or deployment constraints.
 
