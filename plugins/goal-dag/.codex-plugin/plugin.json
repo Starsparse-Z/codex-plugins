@@ -1,0 +1,28 @@
+{
+  "name": "goal-dag",
+  "version": "0.1.0",
+  "description": "Local-first goal DAG orchestration for branching, merging, and multi-trunk work.",
+  "author": {
+    "name": "Starsparse-Z",
+    "url": "https://github.com/Starsparse-Z"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Goal DAG",
+    "shortDescription": "Branch, merge, and coordinate long-horizon goals.",
+    "longDescription": "Manage a long-horizon goal from Codex chat. Add branches, merge them into decision gates, update status, and let the assistant expand the graph autonomously when authorized.",
+    "developerName": "Starsparse-Z",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Create a goal DAG for this project.",
+      "Merge these branches into a decision gate.",
+      "Show the next ready goal nodes."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

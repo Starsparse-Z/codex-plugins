@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "goal-dag": {
+      "command": "node",
+      "args": [
+        "./scripts/server.mjs",
+        "--stdio"
+      ],
+      "cwd": "."
+    }
+  }
+}
