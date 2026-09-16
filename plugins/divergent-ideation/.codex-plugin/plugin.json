@@ -1,0 +1,36 @@
+{
+  "name": "divergent-ideation",
+  "version": "0.1.0",
+  "description": "Structured divergent thinking, creative provocation, and idea convergence for Codex.",
+  "author": {
+    "name": "Starsparse-Z",
+    "url": "https://github.com/Starsparse-Z"
+  },
+  "homepage": "https://github.com/Starsparse-Z/codex-plugins/tree/main/plugins/divergent-ideation",
+  "repository": "https://github.com/Starsparse-Z/codex-plugins",
+  "license": "MIT",
+  "keywords": [
+    "brainstorming",
+    "creativity",
+    "innovation",
+    "ideation",
+    "divergent-thinking"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Divergent Ideation",
+    "shortDescription": "Generate diverse ideas, break assumptions, and converge.",
+    "longDescription": "Move from a problem or rough idea to a diverse portfolio of options. Separate generation from judgment, apply multiple creative lenses, provoke hidden assumptions, then score and select the strongest ideas.",
+    "developerName": "Starsparse-Z",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Brainstorm structurally different options for this problem.",
+      "Break the assumptions behind this idea.",
+      "Turn these raw ideas into a ranked portfolio."
+    ]
+  }
+}

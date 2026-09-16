@@ -1,0 +1,4 @@
+interface:
+  display_name: "Divergent Ideation"
+  short_description: "Generate diverse ideas, break assumptions, and converge."
+  default_prompt: "Use $divergent-ideation to expand this problem into diverse ideas and select the strongest options."
